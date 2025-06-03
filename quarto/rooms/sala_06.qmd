@@ -3,33 +3,67 @@ title: "Habitación 6:"
 include-in-header:
   text: |
     <script type="module">
-    window.GLOBAL_URL = "https://raw.githubusercontent.com/sebastiandres/pyscape/refs/heads/main/quarto/rooms/template.py";
+    window.GLOBAL_URL = "https://raw.githubusercontent.com/Tony-Rome/pyscape/refs/heads/feature/estacion-espacial/quarto/rooms/sala_06.py";
     </script>
     <style>
     #quarto-sidebar, #quarto-sidebar-container { display: none !important; }
     </style>
 ---
 
-Texto de la habitación.
+<h2>
+¡Ya te estas acercando a la mitad de los desafíos!.
+</h2>
+
+<center>
+<img src="./sala_06.png" width="650">
+</center>
+
+<br/>
+
+Un sistema cifrado transmite la secuencia de Fibonacci. Debes extraer y analizar ciertas posiciones para encontrar una clave.
 
 <div class="alert alert-info">
-Desafío de la habitación.
+De la lista de Fibonacci generada, extrae los elementos (números) en los índices 0, 2, 10, -2. Luego promedia los números extraídos.
 </div>
 
-::: {.callout-tip title="Pista" collapse="true"}
-Pista de la habitación
+::: {.callout-tip title="Acceder a elementos de una lista" collapse="true"}
+Para acceder a un elemento se neceita indicar su índice, los índices comienzan desde el valor **0** hasta **n-1** dónde **n** igual a cantidad de elementos de la lista.
 
+En Python los indices pueden ser también negativos `-1, -2, -3, ..., -n` pero estos se cuentan de derecha a izquierda.
+
+
+teniendo la siguiente lista lista = [1, 2, 3, 4, 5, 6]
+
+índices positivos:
+
+* 0 para obtener 1
+* 2 para obtener 3
+* 3 para obtener 4
+
+índices negativos:
+
+* -6 para obtener 1
+* -3 para obtener 4
+* -1 para obtener 6
+
+Ejemplo
 ```python 
-respuesta=True
+lista = [1, 2, 3, 4]
+lista[0] # Obtiene valor 1
+lista[3] # Obtiene valor 3
+lista[-3] # Obtiene valor 2
 ```
 :::
 
 ```{pyodide-python}
+import statistics
 # Escribe tu respuesta aquí
-respuesta = None
-print(respuesta)
+
+lista_fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+promedio = statistics.mean([])
+print(promedio)
 
 # Verifica la respuesta
 import sala
-sala.revisar(respuesta)
+sala.revisar(promedio)
 ```

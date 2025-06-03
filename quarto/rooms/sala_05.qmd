@@ -3,30 +3,45 @@ title: "Habitación 5:"
 include-in-header:
   text: |
     <script type="module">
-    window.GLOBAL_URL = "https://raw.githubusercontent.com/sebastiandres/pyscape/refs/heads/main/quarto/rooms/template.py";
+    window.GLOBAL_URL = "https://raw.githubusercontent.com/Tony-Rome/pyscape/refs/heads/feature/estacion-espacial/quarto/rooms/sala_05.py";
     </script>
     <style>
     #quarto-sidebar, #quarto-sidebar-container { display: none !important; }
     </style>
 ---
 
-Texto de la habitación.
+<h2>
+¡Estupendo! ya estás dominando las operaciones matemáticas.
+</h2>
+
+<center>
+<img src="./sala_05.png" width="650">
+</center>
+
+<br/>
+
+Una compuerta solo se abrirá si ingresas la suma de la secuencia desde el número 1 al número 1000.
 
 <div class="alert alert-info">
-Desafío de la habitación.
+Asigna los valores correspondientes a las variables `a` y `b`.
 </div>
 
-::: {.callout-tip title="Pista" collapse="true"}
-Pista de la habitación
-
-```python 
-respuesta=True
-```
+::: {.callout-tip title="Calcular promedio con funciones de python" collapse="true"}
+* `range(a,b)` crea un rango numérico desde `a` hasta el valor anterior de `b`. Por ejemplo `range(5,10)` crea rango del 5 al 9.
+* `for numero in range(a,b)` es un ciclo que repite todos los valores dado por la función `range(a,b)`.
 :::
 
 ```{pyodide-python}
 # Escribe tu respuesta aquí
-respuesta = None
+
+a=0     # indica valor inicial del rango
+b=1     # indica que su valor anterior es el final del rango
+suma = 0
+
+for numero in range(a,b): # variable numero repite el valor actual de range(a,b)
+    suma = numero + suma # acumula los valores de los números
+
+respuesta = suma
 print(respuesta)
 
 # Verifica la respuesta

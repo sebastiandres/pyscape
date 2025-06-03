@@ -3,30 +3,48 @@ title: "Habitación 3: "
 include-in-header:
   text: |
     <script type="module">
-    window.GLOBAL_URL = "https://raw.githubusercontent.com/sebastiandres/pyscape/refs/heads/main/quarto/rooms/sala_03.py";
+    window.GLOBAL_URL = "https://raw.githubusercontent.com/Tony-Rome/pyscape/refs/heads/feature/estacion-espacial/quarto/rooms/sala_03.py";
     </script>
     <style>
     #quarto-sidebar, #quarto-sidebar-container { display: none !important; }
     </style>
 ---
 
-Texto de la habitación.
+<h2>
+¡Excelente! Veamos otro desafío con números.
+</h2>
+
+<center>
+<img src="./sala_03.png" width="650">
+</center>
+
+<br/>
+
+La temperatura de los paneles solares debe recalibrarse según una fórmula basada en radiación recibida.
+
+$$
+\left( \frac{(1,23 + 2,34)}{(1 + (43/2))} \right) + (3 \times 2^{1,5})
+$$
 
 <div class="alert alert-info">
-Desafío de la habitación.
+Reemplaza la palabra `None` armando la misma fórmula con las variables que se muestran, pero primero asegurate de asignarles su correspondiente valor y cuidado, respesta los paréntesis `()`.
 </div>
 
-::: {.callout-tip title="Pista" collapse="true"}
-Pista de la habitación
-
-```python 
-respuesta=True
-```
+::: {.callout-tip title="Números decimales en código" collapse="true"}
+Los números decimales se escriben con ".". Por ejemplo para **33,5** se puede escribir como `a = 33.5`.
 :::
 
 ```{pyodide-python}
 # Escribe tu respuesta aquí
-respuesta = True #None
+a = 0
+b = 0
+c = 0
+d = 0
+e = 0
+f = 0
+g = 0
+h = 0
+respuesta = None
 print(respuesta)
 
 # Verifica la respuesta

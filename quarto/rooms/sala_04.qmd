@@ -3,31 +3,48 @@ title: "Habitación 4: "
 include-in-header:
   text: |
     <script type="module">
-    window.GLOBAL_URL = "https://raw.githubusercontent.com/sebastiandres/pyscape/refs/heads/main/quarto/rooms/sala_04.py";
+    window.GLOBAL_URL = "https://raw.githubusercontent.com/Tony-Rome/pyscape/refs/heads/feature/estacion-espacial/quarto/rooms/sala_04.py";
     </script>
     <style>
     #quarto-sidebar, #quarto-sidebar-container { display: none !important; }
     </style>
 ---
 
-Texto de la habitación.
+<h2>
+¡Vas muy bien! es momento de agregar un nuevo nivel a los números.
+</h2>
+
+<center>
+<img src="./sala_04.png" width="650">
+</center>
+
+<br/>
+
+El sistema de soporte vital está recibiendo lecturas inconsistentes de temperatura. Necesitas calcular el promedio para tomar decisiones automáticas.
+
+$$
+19,5 - 22,3 - 12 - 10,01 - 32 - 29,99 - 20,89
+$$
 
 <div class="alert alert-info">
-Desafío de la habitación.
+Agrega los números en los corchetes `[]` que están asignados a la variable `numeros`, y sepáralos con el caracter `,`.
 </div>
 
 ::: {.callout-tip title="Pista" collapse="true"}
-Pista de la habitación
 
+Para escribir los números dentro de`[]` sigue el siguiente ejemplo:
 ```python 
-respuesta=True
+numeros = [1, 2, 3, 4]
 ```
 :::
 
 ```{pyodide-python}
 # Escribe tu respuesta aquí
-respuesta = True #None
+import statistics
+numeros = []
+respuesta = statistics.mean(numeros)
 print(respuesta)
+
 
 # Verifica la respuesta
 import sala

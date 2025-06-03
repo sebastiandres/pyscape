@@ -3,30 +3,49 @@ title: "Habitación 1: Hola Mundo"
 include-in-header:
   text: |
     <script type="module">
-    window.GLOBAL_URL = "https://raw.githubusercontent.com/sebastiandres/pyscape/refs/heads/main/quarto/rooms/sala_01.py";
+    window.GLOBAL_URL = "https://raw.githubusercontent.com/Tony-Rome/pyscape/refs/heads/feature/estacion-espacial/quarto/rooms/sala_01.py";
     </script>
     <style>
     #quarto-sidebar, #quarto-sidebar-container { display: none !important; }
     </style>
 ---
 
-Al responder correctamente el enigma, la puerta se abre. Al cruzar la puerta, la puerta se cierra y 
-te encuentras en una nueva habitación, exactamente como la habitación anterior, con una nueva nota sobre la pantalla electrónica:
+<h2>
+¡Has llegado a la primera sala y con ello tu primer obstáculo!.
+</h2>
+
+<br/>
+
+<center>
+<img src="./sala_01.png" width="650">
+</center>
+
+<br/>
+
+La terminal del sistema de oxígeno muestra un valor erróneo de presión ...
+
+<div class="text-center text-danger font-weight-bold">
+**Peligro**
+
+Se ha detectado pérdida de oxígeno en la sala B9-2.
+</div>
+
+¡Rápido! Activa la puerta de emergencia. Indica a través de la terminal para poder cerrar la sala.
 
 <div class="alert alert-info">
-La primera tarea de todo pythonista es escribir "Hola Mundo".  
-Cambia el valor de la variable `respuesta` por `"Hola Mundo"` y ejecuta la celda.
+La primera tarea es escribir "Cerrar".
+Cambia el valor de la variable `respuesta` por `"Cerrar"` y ejecuta la celda.
 </div>
 
 ::: {.callout-tip title="Pista" collapse="true"}
 Recuerda que en Python, los strings (cadenas de texto) se escriben entre comillas dobles o simples.  
 Puedes escribir 
 ```python 
-respuesta="Hola Mundo"
+respuesta="Ejemplo"
 ```
 o
 ```python 
-respuesta='Hola Mundo'
+respuesta='Ejemplo'
 ```
 :::
 

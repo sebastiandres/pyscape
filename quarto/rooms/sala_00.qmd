@@ -3,24 +3,36 @@ title: "Habitación 0: Inicio"
 include-in-header:
   text: |
     <script type="module">
-    window.GLOBAL_URL = "https://raw.githubusercontent.com/sebastiandres/pyscape/refs/heads/main/quarto/rooms/sala_00.py";
+    window.GLOBAL_URL = "https://raw.githubusercontent.com/Tony-Rome/pyscape/refs/heads/feature/estacion-espacial/quarto/rooms/sala_00.py";
     </script>
     <style>
     #quarto-sidebar, #quarto-sidebar-container { display: none !important; }
     </style>
 ---
 
-Despiertas poco a poco en un cuarto oscuro.  
-Solo recuerdas que aceptaste un desafío, algo llamado PySchool.  
-Las murallas son de piedra, y no hay ventanas. Una débil luz emana de una antorcha colgada en la pared.
-En una de las murallas, hay una puerta y una consola electrónica emitiendo un parpadeo de luz.  
-Te acercas a la consola y observas que sobre la pantalla hay una nota:
+<h2 class="text-center">
+¡Bienvenido joven astronauta! <br/>
+Estas a punto de iniciarte en la programación, y qué mejor que participar en la solución de la estación espacial.
+</h2>
+
+<br/>
+
+<center>
+<img src="./sala_00.png" width="650">
+</center>
+
+<br/>
+
+<div class="font-italic">
+Año 2079. La estación espacial OASIS-9, que orbita la luna Europa, sufre una serie de fallas tras una tormenta solar. El comandante en jefe activa el protocolo de emergencia "PYSCHOOL-25": cada sala del sistema principal se bloquea hasta que uno de los miembros de la tripulación resuelve un acertijo lógico o computacional. Solo así podrán restablecer los sistemas antes de que se agote el soporte vital...
+</div>
+
+<br/>
 
 <div class="alert alert-info">
 **¡Bienvenido a PySchool!**  
-Cada habitación tiene un enigma, que deberás resolver con Python.  
-Puedes realizar tantos intentos como desees.  
-Cada habitación tiene algunas explicaciones y pistas.  
+Cada habitación tiene un enigma, que deberás resolver con Python en conjunto a explicaciones y pistas que se presenten. Puedes realizar tantos intentos como desees.
+
 ¡Buena suerte, futuro pythonista!
 </div>
 
@@ -31,9 +43,9 @@ La primera habitación es muy fácil. Sólo tienes que ejecutar la celda haciend
 
 ```{pyodide-python}
 # Escribe tu respuesta aquí
-respuesta = "PySchool2025"
+codigo_acceso = "PySchool2025"
 
 # Verifica la respuesta
 import sala
-sala.revisar(respuesta)
+sala.revisar(codigo_acceso)
 ```

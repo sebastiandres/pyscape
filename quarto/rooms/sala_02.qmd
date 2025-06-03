@@ -3,24 +3,33 @@ title: "Habitación 2: Números"
 include-in-header:
   text: |
     <script type="module">
-    window.GLOBAL_URL = "https://raw.githubusercontent.com/sebastiandres/pyscape/refs/heads/main/quarto/rooms/sala_02.py";
+    window.GLOBAL_URL = "https://raw.githubusercontent.com/Tony-Rome/pyscape/refs/heads/feature/estacion-espacial/quarto/rooms/sala_02.py";
     </script>
     <style>
     #quarto-sidebar, #quarto-sidebar-container { display: none !important; }
     </style>
 ---
 
-Comienzas a entender la rutina. Respondes correctamente, se abre una puerta, y apenas cruzas la puerta, la habitación se cierra.  
-En la nueva habitación hay una nueva nota esperándote:
+<h2>
+¡Muy bien! Haz logrado llegar al segundo desafío.
+</h2>
+
+<center>
+<img src="./sala_02.png" width="650">
+</center>
+
+<br/>
+
+La compuerta de acceso al laboratorio químico requiere un código numérico que se calcula usando la siguiente fórmula:
+
+$$
+(201 + 759) \times 2^{3}
+$$
 
 <div class="alert alert-info">
-Python puede usarse como una calculadora muy potente.  
-¿Puedes calcular el siguiente número?
-
-$$
-\frac{1.23 + 2.34}{1 + 43/2} + 3 \times 2^{1.5}
-$$
+Asigna a cada variable su respectivo valor numérico según la fórmula. Por ejemplo a = 55.
 </div>
+
 ::: {.callout-tip title="Operaciones matemáticas en Python" collapse="true"}
 Las operaciones matemáticas en Python se realizan con los operadores habituales:
 
@@ -33,7 +42,11 @@ Las operaciones matemáticas en Python se realizan con los operadores habituales
 
 ```{pyodide-python}
 # Escribe tu respuesta aquí
-respuesta = None
+a = 0
+b = 1
+c = 1
+d = 0
+respuesta = (a + b) * c**d
 
 # Verifica la respuesta
 import sala
