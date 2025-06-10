@@ -10,10 +10,10 @@ include-in-header:
     </style>
 ---
 
-Texto de la habitación.
+Se tiene un listado objetos que se les debe hacer mantención, pero estos están mezclados con objetos que ya están en perfecto estado.
 
 <div class="alert alert-info">
-Desafío de la habitación.
+Recorre la lista `objetos` y verifica si **no está dentro** de la lista de `reparados` para luego agregarlas a la lista de `por_reparar`.
 </div>
 
 ::: {.callout-tip title="Pista" collapse="true"}
@@ -26,10 +26,16 @@ respuesta=True
 
 ```{pyodide-python}
 # Escribe tu respuesta aquí
-respuesta = None
+objetos = ["linterna", "audífonos", "monitor principal", "motor de enfriador","monitor de repuesto", "antena", "filtro gases", "lentes infrarojo", "teclado"]
+reparados= ["monitor de repuesto", "audífonos", "motor de enfriador"]
+por_reparar = []
 print(respuesta)
+
+for objeto in objetos:
+    if objeto not in reparados:
+        por_reparar.append(objeto)
 
 # Verifica la respuesta
 import sala
-sala.revisar(respuesta)
+sala.revisar(por_reparar)
 ```

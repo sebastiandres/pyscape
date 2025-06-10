@@ -3,21 +3,41 @@ title: "Habitación 8:"
 include-in-header:
   text: |
     <script type="module">
-    window.GLOBAL_URL = "https://raw.githubusercontent.com/sebastiandres/pyscape/refs/heads/main/quarto/rooms/template.py";
+    window.GLOBAL_URL = "https://raw.githubusercontent.com/Tony-Rome/pyscape/refs/heads/feature/estacion-espacial/quarto/rooms/sala_08.py";
     </script>
     <style>
     #quarto-sidebar, #quarto-sidebar-container { display: none !important; }
     </style>
 ---
 
-Texto de la habitación.
+<h2>
+Has llegado a la mitad ¡Vamos por un segundo aire!.
+</h2>
+
+<center>
+<img src="./sala_06.png" width="650">
+</center>
+
+<br/>
+
+Tripulantes deben reparar la filtración de altas temperaturas debido a una averiación de un panel solar,
+tienes que procupar que se cumpla el protocolo de ingreso y para eso debes activar el sistema de seguridad.
+
+Van a ingresar tres tripulantes:
+
+- Tripulante uno tiene **credencial** con acceso permitido y **traje** con _alta_ resistencia
+- Tripulante dos tiene **credencial** con acceso permitido y **traje** con baja resistencia
+- Tripulante tres tiene **credencial** con acceso denegado y **traje** con alta resistencia
 
 <div class="alert alert-info">
-Desafío de la habitación.
+Debes aplicar las sentencias `if - else` para verificar que la `credencial` sea igual a `True` y `resistencia_traje` sea igual a `"Alta"` para permitir acceso a la sala.
+
+Puedes conectar condiciones a través de un `and`.
+
 </div>
 
 ::: {.callout-tip title="Pista" collapse="true"}
-Pista de la habitación
+Reemplazar la palabra `None` por `True` o `"Alta"` dependiendo de la variable con la que se iguala.
 
 ```python 
 respuesta=True
@@ -25,11 +45,16 @@ respuesta=True
 :::
 
 ```{pyodide-python}
-# Escribe tu respuesta aquí
-respuesta = None
-print(respuesta)
+
+def autorizar_acceso(tarjeta, resistencia_traje):
+
+    # Reemplaza las palabras None por los valores correctos
+    if tarjeta == None and resistencia_traje == None:
+        return True
+    else:
+        return False
 
 # Verifica la respuesta
 import sala
-sala.revisar(respuesta)
+sala.revisar(autorizar_acceso)
 ```
